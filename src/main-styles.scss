@@ -33,3 +33,43 @@ html {
 html, body {
      height: 100%;
 }
+
+.centered-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 100%;
+}
+
+.button{
+    border-radius: 5px;
+    height:40px; 
+    cursor: pointer;
+    min-width:90px;
+    &:active{
+        transform: scale(0.95);
+    }
+}
+
+.button-primary{
+    @extend .button;
+    border:none;
+    background-color: $green;
+    font-weight: 600;
+    font-size:18px;
+    color:white;
+    &:hover{
+        box-shadow: 0 0 0 5px #eeeeee;
+    }
+}
+
+.button-secondary{
+    @extend .button;
+    border: 1px solid $green;
+    font-size:14px;
+    background-color: $light;
+    &:hover{
+        box-shadow: 0 0 0 5px #eeeeee;
+    }
+}
