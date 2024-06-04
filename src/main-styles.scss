@@ -86,17 +86,18 @@ html, body {
 .list-form{
     display: flex;
     margin-bottom: 20px;
-    .list-input{
-        flex-grow: 1;
-        border-radius: 5px;
-        border:none;
-        background-color: $light;
-        padding:0px 10px;
-        height: 40px;
-        &:focus{
-            outline:none;
-            box-shadow: 0 0 0 2px $light-green;
-        }
+}
+
+.list-input{
+    flex-grow: 1;
+    border-radius: 5px;
+    border:none;
+    background-color: $light;
+    padding:0px 10px;
+    height: 40px;
+    &:focus{
+        outline:none;
+        box-shadow: 0 0 0 2px $light-green;
     }
 }
 
@@ -104,4 +105,12 @@ html, body {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
+}
+
+.title{
+    font-family: 'Lato';
+    font-size:24px;
+    color:#27d7a1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
